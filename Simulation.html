@@ -95,7 +95,7 @@
 
 				<figure>
 					<video id="design1" src="img/simulation/simulation_20s.mp4" autoplay loop width="700"></video>
-					<figcaption>Movie 1 The scenes of the simulation</figcaption>
+					<figcaption>Movie 1 A scene from simulation</figcaption>
 				</figure>
 
 
@@ -110,26 +110,35 @@
 								<img class="img-responsive" src="./img/simulation/simulation1.png" width = "350">
 								<figcaption>Fig 1. The simulation space</figcaption>
 							</figure>
-							<li>The monomers are simplified as cylinders, which is cost-efficient for the physical engine.</li>
-							<li>The stacking of the monomers takes place as the collisions among the cylinders.</li>
+							
+								<li>To simulate the collision efficiently, we modify the position of monomer, which
+
+goes out of the boundaries to satisfy the periodical boundary. Instead of 
+
+combining two objects, we erased one of the object and generate a new object 
+
+that matches the length with the addition monomer. It is possible to separate 
+
+the object into two pieces.</li>
+								<li>The monomers are simplified as cylinders, which is cost-efficient for the physical engine.</li>
+								<li>The stacking of the monomers takes place as the collisions among the cylinders.</li>
 						</ul>
 				</div>
 
 				<div id="content2-2">
-				<h2>Interface</h2>
-				<p>The cylinders collide mutually based on Brownian motion. We created a user interface with several scripts:</p>
+					<h2>Interface</h2>
+					<p>The cylinders collide mutually based on Brownian motion. We created a user interface with several scripts:</p>
 						<ul>
 							<li>To adjust the space size to fit with the desired concentration.</li>
 							<li>To modify the velocity and angular velocity of each monomer.</li>
 							<li>To output the result into an appropriate file format.</li>
 						</ul>
 
-				<p>To simulate the collision efficiently, we modify the position of monomer, which goes out of the boundaries to satisfy the periodical boundary. Instead of combining two objects, we erased one of the object and generate a new object that matches the length with the addition monomer. It is possible to separate the object into two pieces.</p>
 				</div>
 
 				<div id="content2-3">
-				<h2>Results</h2>
-				<p>In our simulation, the Brownian motion of each monomer and the stacking behavior among them is reproduced. The results correspond to the temperature at 8 °C and 250 nM concentration of DNA origami in a span of 8 seconds. The graph (Fig. 2) and the histogram (Fig. 3) show that monomer concentration decreases while the multimers such as dimers and trimers increase overtime.</p>
+					<h2>Results</h2>
+					<p>In our simulation, the Brownian motion of each monomer and the stacking behavior among them is reproduced. The results correspond to the temperature at 8 °C and 250 nM concentration of DNA origami in a span of 8 seconds. The graph (Fig. 2) and the histogram (Fig. 3) show that monomer concentration decreases while the multimers such as dimers and trimers increase overtime.</p>
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation2.png">
@@ -142,8 +151,13 @@
 						</figure>
 
 						<p>There are still some unrealistic motions due to the limitation of the Unity engine, since this engine is not made to work on the molecular scale, it cannot handle colliding objects at high speed. We plan to improve the simulation in the following ways: (1) Introducing CUDA to reduce the computational time. (2) Employing parallel processing to compute the time development in parallel to obtain average data.</p>
-						<p>If you are interested in this program, please visit here <a href="./img/simulation/BIOMOD_Sendai_Simulation.zip"download="BIOMOD_Sendai_Simulation.zip" >File : BIOMOD_Sendai_Simulation.zip</a>.</p>
+						<p>If you are interested in this program, please visit <a href="./img/simulation/BIOMOD_Sendai_Simulation.zip"download="BIOMOD_Sendai_Simulation.zip" >here</a>.</p>
 
+					</div>
+					
+					<div id="content2-4">
+						<h2>Reference</h2>
+						<p>[1] Unity: http://unity3d.com/</p>
 					</div>
 			</div>
 		</div>
