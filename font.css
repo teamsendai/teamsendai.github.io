@@ -117,11 +117,12 @@ figure{
 	color: #2a2a2a;
 	border-bottom: 2px solid #2a2a2a;
 	text-align: center;
+	
 }
 
 #EuropeanTable th:first-child {
 	padding: 10px 25px;
-  text-align: right;
+  text-align: center;
 	border-right:2px solid #2a2a2a;
 	color: #2a2a2a;
 }
