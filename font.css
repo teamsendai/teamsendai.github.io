@@ -34,13 +34,36 @@ h3 {
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
-  font-weight: 300;
+  font-weight: 400;
   text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
   line-height: 1.5em;
   margin-bottom: 0.5em;
-  color: #555555
+  color: #2a2a2a
+}
+
+ol {
+ font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #2a2a2a
+}
+ul {
+ font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #2a2a2a
 }
 
 figure{
@@ -57,16 +80,18 @@ figure{
 	line-height: 1.5em;
   line-height: 20px;
   padding : 10px;
+  color: #56599f;
 }
 
 #multi-line{
 	font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
-  font-weight: 300;
+  font-weight: 500;
 	line-height: 1.5em;
 	text-align: justify;
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
+  color: #56599f;
 }
 
 #EuropeanTable
