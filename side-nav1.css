@@ -3,9 +3,16 @@
 #gnav li a{
     color: gray;
     background: white;
-    border-top: inset 1px #CCCCCC;
     border-bottom: inset 1px #CCCCCC;
 }
+
+#gnav li a:hover{
+    color: gray;
+    background: white;
+    border-top: inset 2px #6699FF;
+    border-bottom: inset 2px #6699FF;
+}
+
    
 .navbar-defult .navigation a:hover {
 
@@ -13,13 +20,6 @@
     color: black;
 }
 
-
-#gnav li a.current{
-
-    border-top: inset 1px #FFCC66;
-    border-bottom: inset 1px #FFCC66;
-    color: black;
-}
 
 
 .navbar .navbar-collapse .navigation li a{
@@ -65,7 +65,7 @@
 	max-width: 1300px;
     height: 460px;
     background-color: #316679;
-    background-image: url("./img/home/top1.png");
+    background-image: url("./img/home/top1.jpg");
     background-size: cover;
     background-position: center;
   
