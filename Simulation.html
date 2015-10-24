@@ -80,9 +80,8 @@
         <!-- サイドナビ ---------------------------------------------->
         	<nav class="navbar navbar-defult">
             	<ul id="gnav" class="nav nav-tabs   navigation">
-            		<li><a href="#content2-1" class="side-title"><b>Model</b></a></li>
-					<li><a href="#content2-2" class="side-title"><b>Interface</b></a></li>
-					<li><a href="#content2-3" class="side-title"><b>Results</b></a></li>
+            		<li><a href="#content2-1" class="side-title"><b>Unity simulation</b></a></li>
+					<li><a href="#content2-2" class="side-title"><b>oxDNA Simulation</b></a></li>
 				</ul>
 	 		</nav>
 
@@ -90,6 +89,8 @@
 	<!-- 文章コンテンツ ----------------------------------------------->
 			<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
 				<h1>Simulation</h1>
+					<div id="content2-1">
+						<h2>Unity simulation</h2>
 
 				<p>To confirm our design concept, we developed a simulation software using the physical engine Unity [1], which allows us to explore the space of design parameters and predict the behavior of behavior of molecules in nano-scale.</p>
 
@@ -99,11 +100,8 @@
 						<figcaption id="mono-line">Movie 1 A scene from simulation</figcaption>
 				</figure>
 
-
-        <div id="content2-1">
-					<div class="subtitle-line">
-						<h2>Model</h2>
-					</div>
+				<h3>1.Model</h3>
+					
 						<p>Since it takes too much computational cost to represent the 3D model of the monomer in detail, we have to made necessary simplifications in the simulation.</p>
 						<ul>
 							<li>Simulation space is set as a cube with periodic boundaries to reduce the computing time. Hundreds of monomers placed randomly in a space with determined concentration</li>
@@ -117,10 +115,10 @@
 								<li>The monomers are simplified as cylinders, which is cost-efficient for the physical engine.</li>
 								<li>The stacking of the monomers takes place as the collisions among the cylinders.</li>
 						</ul>
-				</div>
 
-				<div id="content2-2">
-					<h2>Interface</h2>
+
+
+					<h3>2.Interface</h3>
 					<p>The cylinders collide mutually based on Brownian motion. We created a user interface with several scripts:</p>
 						<ul>
 							<li>To adjust the space size to fit with the desired concentration.</li>
@@ -128,33 +126,46 @@
 							<li>To output the result into an appropriate file format.</li>
 						</ul>
 
-				</div>
 
-				<div id="content2-3">
-					<h2>Results</h2>
+					<h3>3.Results</h3>
 					<p>In our simulation, the Brownian motion of each monomer and the stacking behavior among them were reproduced. The results correspond to the temperature at 8 °C and 250 nM concentration of DNA origami in a span of 8 seconds. The graph (Fig. 2) and the histogram (Fig. 3) show that monomer concentration decreased while the multimers such as dimers and trimers increased overtime.</p>
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation2.png">
-								<figcaption id="mono-line">Fig. 2 The monomer repartition</figcaption>
-							
+							<figcaption id="mono-line">Fig. 2 The monomer repartition</figcaption>
 						</figure>
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation3.png">
-								<figcaption id="mono-line">Fig. 3 Histogram of the number of monome</figcaption>
-							
-						
+							<figcaption id="mono-line">Fig. 3 Histogram of the number of monome</figcaption>
 						</figure>
 
 						<p>There are still some unrealistic motions due to the limitation of the Unity engine, since this engine is not made to work on the molecular scale, it cannot handle colliding objects at high speed. We plan to improve the simulation in the following ways: (1) Introducing CUDA to reduce the computational time. (2) Employing parallel processing to compute the time development in parallel to obtain average data.</p>
 						<p>If you are interested in this program, please visit <a href="./img/simulation/BIOMOD_Sendai_Simulation.zip"download="BIOMOD_Sendai_Simulation.zip" >here</a>.</p>
+						
+						</div>
+						
+						<div id="content2-2">
+							<h2>oxDNA Simulation</h2>
+							<p>oxDNA（https://dna.physics.ox.ac.uk）によるシュミュレーションの結果をmovie1とmovie2に示す。Moive1とmovie2から、もdesignで設計した通りの構造体ができることと、shiftとcylinderは独立に回転することがわかる。</p>
+							
+							<figure>
+								<video id="simulation1" src="img/simulation/simulation2.mp4" autoplay loop width="300"></video>
+								<figcaption id="mono-line">video. 2 </figcaption>
+							</figure>
+							
+							<figure>
+								<video id="simulation21" src="img/simulation/simulation.mp4" autoplay loop width="300"></video>
+								<figcaption id="mono-line">video. 3 </figcaption>
+							</figure>
+							
 
-					</div>
+						</div>
 					
-					<div id="content2-4">
+					<div id="content2-3">
 						<h2>Reference</h2>
 						<p>[1] Unity: http://unity3d.com/</p>
+						<p>[2] oxDNA: https://dna.physics.ox.ac.uk</p>
 					</div>
 			</div>
 		</div>
