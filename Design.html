@@ -1,0 +1,285 @@
+<!DOCCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+	<title>Design- TeamSendai2015</title>
+	<!--外部ファイル読み込み------------------------------------------------>	
+		<link rel="stylesheet" href="./normalize.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--自作------->
+		<link rel="stylesheet" href="./font.css">
+		<link rel="stylesheet" href="./side-nav1.css">
+		<link rel="stylesheet" href="./text-line.css">
+		<link rel="stylesheet" href="./video.css">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script type="text/javascript" src="./lib/jquery-2.1.4.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script type="text/javascript" src="./scripts/nav-current.jquery.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="./scripts/insert-articles.js"></script>
+		<script type="text/javascript" src="./scripts/jquery.goup.js"></script>
+		<script type="text/javascript" src="./scripts/animatetoselector.jquery.js"></script>
+		<script type="text/javascript" src="./scripts/nav-current.jquery.js"></script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+	<!--フォント--------------------------------------------------------------->	
+		<link href='https://fonts.googleapis.com/css?family=Roboto|Oswald:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,500,400,300,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+    
+<body>
+
+<!-- グローバルナビ ----------------------------------------------------->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<!-- ロゴ名の表示------------------------------------------->
+  		<div class="navbar-header">
+    		<a class="navbar-brand" href="./index.html"></a>
+    	<!--トグルボタンの設置-->
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-content">
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+    		</button>
+  		</div>
+	<!-- ナビのリンクリスト ------------------------------------------>
+		<div id="nav-content" class="collapse navbar-collapse ">
+    		<ul class="nav navbar-nav navigation">
+    			<li><a href="./index.html">Home</a></li>
+				<li><a href="./Project.html">Project</a></li>
+				<li><a href="./Design.html">Design</a></li>
+				<li><a href="./Simulation.html">Simulation</a></li>
+				<li><a href="./Experiment.html">Experiment</a></li>
+				<li><a href="./Future.html">Future</a></li>
+				<li><a href="./Material.html">Material & Method</a></li>
+				<li><a href="./Team.html">Team & Sponsors</a></li>
+     <!--ドロップダウン化するliタグ------------------------------------>
+      			<li class="dropdown">
+        			<ul class="dropdown-menu">
+        				<li><a href="./index.html">Home</a></li>
+						<li><a href="./Project.html">Project</a></li>
+						<li><a href="./Design.html">Design</a></li>
+						<li><a href="./Simulation.html">Simulation</a></li>
+						<li><a href="./Experiment.html">Experiment</a></li>
+						<li><a href="./Future.html">Future</a></li>
+						<li><a href="./Material.html">Material & Method</a></li>
+						<li><a href="./Team.html">Team & Sponsors</a></li>
+        			</ul>
+      			</li>
+    		</ul>
+    	</div>
+	</nav>
+
+<!-- コンテンツ ----------------------------------------------------------------------------------->
+	<section class="container" style="background-color:white">
+	<!-- 全体の割り振りrowで開始 ------------------------------------->
+        <div class="row">
+        <!-- サイドナビ ---------------------------------------------->
+        	<nav class="navbar navbar-defult">
+            	<ul id="gnav" class="nav nav-tabs   navigation">
+            		<li><a href="#content2-1" class="side-title"><b>Principle</b></a></li>
+					<li><a href="#content2-2" class="side-title"><b>Implementation</b></a></li>
+				</ul>
+	 		</nav>
+	<!-- 文章コンテンツ ----------------------------------------------->		
+			<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
+				<h1>Design</h1>
+				<div id="content2-1">
+					<div class="subtitle-line">
+						<h2>Concept</h2>
+					</div>
+					<p></p>
+					
+					<p>As <a href="./Project.html">mentioned</a>,circular assembly is to construct size-determined homomultimer. The dihedral angle α between stacking surfaces determines the number of stacking  \(N_C \)  Namely,
+ </p> 
+
+					<span class="math">
+           				\[{N_C}=(\frac{ 360°}{α})
+           				\tag{1}
+           				\]
+    				</span>
+    				
+					<figure>
+						<img class="img-responsive" src="./img/design/design1.jpg">
+						<figcaption>Fig.1 Principle of circular assembly</figcaption>
+					</figure>
+
+					<p>This principle is based on the fact that a ring is a connected shape with no end points. However, this principle is not possible to apply to a linear assembly. Here, we propose a novel method to control linear homomultimers based on geometrical constraints. </p>
+					
+					<p>To this end, we introduced a vernier mechanism consisting of a hollow cylinder (blue) and a twisted shaft (red), where the shaft can rotate inside the cylinder (Fig 2.).</p>
+
+					<figure>
+						<video id="design1" src="img/design/design2.mp4" autoplay loop width="700"></video>
+						<figcaption>Fig 2. Schematic of monomer</figcaption>
+					</figure>
+					<p></p>
+					<p>Since the shaft is slightly twisted, there is a phase shift θ between the top and bottom ends. The grooves on the cylinder limit the rotation of the shaft within a particular range φ. Therefore, the shaft can move within the range of φ-θ. As the monomers stack, the phase shift accumulates on the shaft in proportion to the number of stacking n. When the accumulated twist on the shaft reaches the limit of the range, the monomer cannot stack any more (Fig 3.).</p>
+					
+					<div class="row">
+						<figure>
+							<div class="col-xs-3 col-sm-3 col-md-3  gridsample" style="background-color:white;" >
+								<img class="img-responsive" src="./img/design/design3.png">
+							</div>
+							<div class="col-xs-9 col-sm-9 col-md-9  gridsample" style="background-color:white;" >
+								<video id="design4" src="img/design/design3.mp4" autoplay loop width="500"></video>
+								
+							</div>
+							
+							<div class="col-xs-12 col-sm-12 col-md-12  gridsample" style="background-color:white;" >
+								<figcaption>Fig 3. Principle of the vernier mechanism</figcaption>
+							</div>
+						</figure>
+					</div>
+
+					<p></p>
+					<p>The number of stacking monomers is restricted as follows: </p>
+					
+					<span class="math">
+           				\[n≦\frac{φ-θ}{θ}
+           				\tag{2}
+           				\]
+    				</span>
+					
+					<p>Therefore, the maximum number of stacking monomer is given by</p>
+					
+					<span class="math">
+           				\[{N_l}=(\frac{φ-θ}{θ})
+           				\tag{3}
+           				\]
+    				</span>
+					<p></p>
+					
+					<p>where \(N_l\)is the largest integer less than \(\frac{φ-θ}{θ}\)</p>
+					
+					<p>Note that we can control the number of stacking by adjusting the twist angle θ and the range of the groove φ.</p>
+					
+				</div>
+				
+              	<div id="content2-2">
+					<div class="subtitle-line">
+						<h2>Implementation</h2>
+					</div>
+					<p></p>
+					<p>In order to realize the concept, we designed the monomer by DNA origami (Fig 4.). The shaft consists of a rod and two heads on its both ends. The rod is made of 6 double helices (6 helix bundle, 6HB) while the heads are made of 4 helices. The shaft is twisted by adjusting the interval distance among the crossovers in the 6HB. The cylinder is made of 30 double helices. 12 of them are shorter than others so as to make rotating space (groove) for the head. This special shape can determine the movable range of the shaft. We set the twist angle θ to be 10° and the movable range φ to be 120°. According to Equation (3), the maximum stacking number should be 11.</p>
+					
+					<figure>
+						<img class="img-responsive" src="./img/design/design4.png">
+						<figcaption>Fig.4 The sketch of DNA origami</figcaption>
+					</figure>
+					<p></p>
+					<p>Instead of sticky end hybridization, we use shape-complementary blunt ends. The monomer can stack each other only when the shape-complementary surfaces on both the cylinder and the shaft matches in the pre-determined way (Fig. 5).</p>
+					
+					<figure>
+						<img class="img-responsive" src="./img/design/design5.png">
+						<figcaption>Fig 5. Shape-complementary Surfaces</figcaption>
+					</figure>
+					
+					<p>The DNA origami is designed by caDNAno2 (Fig 6.). M13mp18 is used as the scaffold. The staples of the shaft are shorter than the ones of the cylinder to set the melting temperature of the shaft higher than that of the cylinder. During annealing, the shaft forms first, then the cylinder.</p>
+					<p>These shaft and cylinder are made from one scaffold. To avoid undesired entanglement, the shaft is tethered to the cylinder at two points, one is close to the top and the other is close to the bottom.</p>
+					
+					<figure>
+						<img class="img-responsive" src="./img/design/design6.jpg">
+						<figcaption>Fig 6. caDNAno Blue Print</figcaption>
+					</figure>
+
+					<p>According to Equation (3), the number of stacking is determined by the twist angle θ and the movable range φ. In 3D DNA origami, twisting of the structure can be induced by skipping or inserting base pairs in the crossovers in a certain way [1].</p>
+					<p>In our design, by skipping 1 base, the shaft twists clockwise in 5°, while it twists counter clockwise in the same angle by inserting 1 base (Fig 7.). To adjust the twist angle θ, a certain number of bases are skipped or inserted properly. In the following experiment, we use the shaft with 10° twist by skipping 2 bases.</p>
+
+					<figure>
+						<img class="img-responsive" src="./img/design/design7.png">
+						<figcaption>Fig.7 Adjustment of twist angle</figcaption>
+					</figure>
+				
+					<p>To adjust the movable range φ, which is determined by the groove shape of the cylinder, we can make different movable ranges by adding/deleting the staples, such as 40°,60°,80°,100°,120°,160°,180°,220°,240° (Fig 8.).  </p>
+				
+					<figure>
+						<img class="img-responsive" src="./img/design/design8.png">
+						<figcaption>Fig.8 Adjustment of twist angle</figcaption>
+					</figure>
+					
+				</div>
+
+				<div id="content2-5">
+					<div class="subtitle-line">		
+						<h2>Reference</h2>
+					</div>
+					
+					<p>[1] Dietz, H., Douglas, S. M., & Shih, W. M. (2009). Folding DNA into twisted and curved nanoscale shapes. Science, 325(5941), 725-730.</p>
+		
+					
+				</div>
+
+			</div>
+		</div>
+    </section>
+    
+    <!-- フッター --------------------------------------------------------------------->
+    <footer class="footer" style="background-color:#222222;">
+  		<div class="container">
+  			<div class="row">
+        		<div class="col-xs-8 col-sm-8 col-md-8" >
+  					<a href="mailto:biomod2015@gmail.com" id="info_mail"><font color="#EEEEEE">
+            			<span class="glyphicon glyphicon-envelope"></span>TeamSenadi2015@gmail.com</font>
+            		</a>
+    				<p class="text-muted"><font color="#EEEEEE">Copyright &copy; 2015 Team Sendai All Rights Reserved.</font></p>
+    			</div>
+    			
+    			<div class="col-xs-4 col-sm-4 col-md-4" >
+  					<div id="footer-lab">
+            			<a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html" target=”_blank”>
+            			<img src="img/lab-logo1.png"height="60" >
+            			</a>
+            		</div>
+  				</div>
+  			</div>
+  		</div>
+	</footer>
+	
+	<!-- サイドナビによる移動プログラム ------------------------------------------------>
+    <script>
+        $(function(){
+            // smooth-scroll
+            // http://kyasper.com/jquery-tips/
+            $('a[href^=#]').click(function(){
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html': href);
+                var position = target.offset().top - 70;
+                //header100px分offset
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });    
+        });
+    </script>
+    
+    <!--「ページトップへ戻る」プログラム------------------------------------------------>
+    <script>
+		$.goup({location: "right",locationOffset: 50,bottomOffset: 50,title:"up↑"});
+	</script>
+	
+	<!--「ボタンをかっこよくする」プログラム------------------------------------------------>
+	<script >
+		$('.navigation a').animateToSelector({
+    	selectors: ['.navigation a:hover'],
+    	properties: [
+        	'background-color',
+        	'padding-left',
+        	'color'
+    	],
+    		events: ['mouseover', 'mouseout']
+		});
+	</script>
+
+</body>
+</html>

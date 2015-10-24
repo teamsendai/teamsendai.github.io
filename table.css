@@ -1,0 +1,19 @@
+table.sample{
+  width:70%;
+  border-collapse: collapse;
+}
+table.sample th{
+
+  background-color:#CACACA;
+  padding:3px;
+}
+table.sample td{
+  text-align:center;
+  padding:3px;
+}
+table.sample tr:hover {
+  background-color: #FFCC99;    /* マウスオーバー時の行の背景色 */
+}
+table.sample td:hover {
+  background-color: #CCFFFF;    /* マウスオーバー時のセルの背景色 */
+}

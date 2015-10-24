@@ -1,0 +1,15 @@
+video#home{
+locate:relative;
+  width: 100%;
+
+  z-index: 1;
+}
+video#design4{
+locate:relative;
+width: 100%
+z-index: 1;
+}
+
+.youtube a:hover {
+   image: url("/img/toppig.png");
+}

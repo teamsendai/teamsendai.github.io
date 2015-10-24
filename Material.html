@@ -1,0 +1,483 @@
+<!DOCCTYPE html>l
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Material- TeamSendai 2015</title>
+	<!--外部ファイル読み込み------------------------------------------------>
+		<link rel="stylesheet" href="./normalize.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--自作------->
+		<link rel="stylesheet" href="./side-nav1.css">
+		<link rel="stylesheet" href="./text-line.css">
+		<link rel="stylesheet" href="./font.css">
+		<link rel="stylesheet" href="./table.css">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./lib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="./scripts/insert-articles.js"></script>
+		<script type="text/javascript" src="./scripts/jquery.goup.js"></script>
+		<script type="text/javascript" src="./scripts/animatetoselector.jquery.js"></script>
+		<script type="text/javascript" src="./scripts/nav-current.jquery.js"></script>
+
+	<!--フォント--------------------------------------------------------------->
+		<link href='https://fonts.googleapis.com/css?family=Roboto|Oswald:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,500,400,300,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<!-- グローバルナビ ----------------------------------------------------->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<!-- ロゴ名の表示------------------------------------------->
+  		<div class="navbar-header">
+    		<a class="navbar-brand" href="./index.html"></a>
+    	<!--トグルボタンの設置-->
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-content">
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+    		</button>
+  		</div>
+	<!-- ナビのリンクリスト ------------------------------------------>
+		<div id="nav-content" class="collapse navbar-collapse ">
+    		<ul class="nav navbar-nav navigation">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./Project.html">Project</a></li>
+				<li><a href="./Design.html">Design</a></li>
+				<li><a href="./Simulation.html">Simulation</a></li>
+				<li><a href="./Experiment.html">Experiment</a></li>
+				<li><a href="./Future.html">Future</a></li>
+				<li><a href="./Material.html">Material & Method</a></li>
+				<li><a href="./Team.html">Team & Sponsors</a></li>
+     <!--ドロップダウン化するliタグ------------------------------------>
+      			<li class="dropdown">
+        			<ul class="dropdown-menu">
+        				<li><a href="./index.html">Home</a></li>
+						<li><a href="./Project.html">Project</a></li>
+						<li><a href="./Design.html">Design</a></li>
+						<li><a href="./Simulation.html">Simulation</a></li>
+						<li><a href="./Experiment.html">Experiment</a></li>
+						<li><a href="./Future.html">Future</a></li>
+						<li><a href="./Material.html">Material & Method</a></li>
+						<li><a href="./Team.html">Team & Sponsors</a></li>
+        			</ul>
+      			</li>
+    		</ul>
+    	</div>
+	</nav>
+
+<!-- コンテンツ ----------------------------------------------------------------------------------->
+	<section class="container" style="background-color:white;">
+	<!-- 全体の割り振りrowで開始 ------------------------------------->
+        <div class="row">
+        <!-- サイドナビ ---------------------------------------------->
+        	<nav class="navbar navbar-defult">
+            	<ul id="gnav" class="nav nav-tabs   navigation">
+            		<li><a href="#content2-1" class="side-title"><b>Protocol</b></a></li>
+					<li><a href="#content2-2" class="side-title"><b>Design</b></a></li>
+					<li><a href="#content2-3" class="side-title"><b>Sample Preparation</b></a></li>
+					<li><a href="#content2-4" class="side-title"><b>AFM</b></a></li>
+				</ul>
+	 		</nav>
+
+
+
+	<!-- 文章コンテンツ ----------------------------------------------->
+			<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
+				<h1>Material</h1>
+
+				<div id="content2-1">
+				<div class="subtitle-line">
+				<h2>1. Protocol</h2>
+				</div>
+
+					<figure>
+        		<img class="img-responsive" src="./img/material/material1.png">
+						<figcaption id="mono-line">Fig.1 Protocol （thermal cyclerなど、機器の写真を織り交ぜたフローチャートのような図が入る予定。撮影済み、制作中）</figcaption>
+					</figure>
+
+					<p>In this page, materials and methods for our experiments are described. Fig. 1 shows a brief outline of the experiments.</p>
+			</div>
+
+
+    	<div id="content2-2">
+			<div class="subtitle-line">
+			<h2>2. Design</h2>
+			</div>
+			<p>We designed four types of origami by using caDNAno[1]. Their schematics are summarized in Fig. 2. In addition, source codes in json format are available from the lists below</p>
+			<figure>
+        	<img class="img-responsive" src="./img/material/Fig2.png">
+					<figcaption id="mono-line">Fig.2 caDNAno designs </br>
+						SLH.json &nbsp; &nbsp; &nbsp;
+							<a href="./img/material/B_origami.json"download="A_origami.json" >(+/+).json</a> &nbsp; &nbsp; &nbsp;
+							<a href="./img/material/B_origami.json"download="B_origami.json">(+/-).json</a> &nbsp; &nbsp; &nbsp;
+							<a href="./img/material/C_origami.json"download="C_origami.json">(-/+).json</a> &nbsp; &nbsp; &nbsp;
+							<a href="./img/material/C_origami.json"download="D_origami.json">(-/-).json</a></figcaption> &nbsp; &nbsp; &nbsp;
+			</figure>
+
+
+<div id="content2-3">
+	<div class="subtitle-line">
+			<h2>Sample Preparation</h2>
+				<h3>Mixing</h3>
+	</div>
+				<p>Our DNA origami samples were prepared by using one of the following Table 1 to Table 5. We used Table 1 unless otherwise specified</p>
+				<figure>
+  					<figcaption id="mono-line">Table1 Undefined Title</figcaption>
+    						<table id="EuropeanTable">
+    							<thead>
+      							<tr>
+        								<th></th>
+        								<th>Final Concentration</th>
+										</tr>
+    							</thead>
+    							<tbody>
+      							<tr>
+        								<td>Shaft-Staples</td>
+        								<td>100nM</td>
+      							</tr>
+										<tr>
+        								<td>Cylinder Staples</td>
+        								<td>20nM</td>
+      							</tr>
+										<tr>
+        								<td>M13mp18</td>
+        								<td>2nM</td>
+      							</tr>
+										<tr>
+        								<td>Buffer</td>
+        								<td>1×TAE/SEA</td>
+										</tr>
+    							</tbody>
+  							</table>
+						</figure>
+
+
+      <figure>
+  				<figcaption id="mono-line">Table 2 Undefined title</figcaption>
+    					<table id="EuropeanTable">
+    						<thead>
+      							<tr>
+        							<th></th>
+        							<th>Final Concentration</th>
+										</tr>
+    						</thead>
+    						<tbody>
+      							<tr>
+        							<td>Shaft Staples</td>
+        							<td>100nM</td>
+										</tr>
+										<tr>
+        							<td>Cylinder-Staples</td>
+        							<td>50nM</td>
+										</tr>
+										<tr>
+        							<td>M13mp18</td>
+        							<td>2nM</td>
+										</tr>
+										<tr>
+        							<td>Buffer</td>
+        							<td>1×TAE/Mg^(2+)10mM</td>
+										</tr>
+    						</tbody>
+  						</table>
+				</figure>
+      <figure>
+  		<figcaption id="mono-line">Table 3 Undefined title </br>After annealing, we added 1μL of 1×TAE/Mg^(2+)60mM to 9μL of the samples. (Final concentration of Mg^(2+) was 15mM)</figcaption>
+    			<table id="EuropeanTable">
+    				<thead>
+      					<tr>
+        					<th></th>
+        					<th>Final Concentration</th>
+								</tr>
+    						</thead>
+    						<tbody>
+      						<tr>
+        						<td>Shaft-Staples</td>
+        						<td>100nM</td>
+									</tr>
+									<tr>
+        						<td>Cylinder Staples</td>
+        						<td>20nM</td>
+      						</tr>
+									<tr>
+        						<td>M13mp18</td>
+        						<td>2nM</td>
+      						</tr>
+									<tr>
+        						<td>Buffer</td>
+        						<td>1×TAE/Mg^(2+)10mM</td>
+									</tr>
+								</tbody>
+  						</table>
+				</div>
+			</figure>
+
+<figcaption id="mono-line">Table 4 Undefined title </br>After annealing, we added 1μL of 1×TAE/Mg^(2+)110mM to 9μL of the samples. (Final concentration of Mg^(2+) was 20mM).</figcaption>
+		<table id="EuropeanTable">
+			<thead>
+					<tr>
+						<th></th>
+						<th>Final Concentration</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Shaft-Staples</td>
+							<td>100nM</td>
+						</tr>
+						<tr>
+							<td>Cylinder Staples</td>
+							<td>20nM</td>
+						</tr>
+						<tr>
+							<td>M13mp18</td>
+							<td>2nM</td>
+						</tr>
+						<tr>
+							<td>Buffer</td>
+							<td>1×TAE/Mg^(2+)10mM</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+
+	<figcaption id="mono-line">Table 5 Undefined title </br>After annealing, we added 1μL of 1×TAE/Mg^(2+)210mM to 9μL of the samples. (Final concentration of Mg^(2+) was 30mM).</figcaption>
+	<table id="EuropeanTable">
+				<thead>
+						<tr>
+							<th></th>
+							<th>Final Concentration</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Shaft-Staples</td>
+								<td>100nM</td>
+							</tr>
+							<tr>
+								<td>Cylinder Staples</td>
+								<td>20nM</td>
+							</tr>
+							<tr>
+								<td>M13mp18</td>
+								<td>2nM</td>
+							</tr>
+							<tr>
+								<td>Buffer</td>
+								<td>1×TAE/Mg^(2+)10mM</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+<p>Our four types of origami are distinguished from the shaft-staples while the cylinder-staples are the common part of them. The sequences in xlsx format are available from <a href="./img/material/staples_sequences.xlsx"download="staples_sequences.xlsx">here</a>.</p>
+
+<h3>3.2 Annealing Condition</h3>
+<p>We annealed DNA origami samples by one of the following schedules. We used the schedule of Fig.4 unless otherwise specified.</p>
+<figure>
+    <img class="img-responsive" src="./img/material/Fig5.png">
+    <figcaption id="mono-line">Fig.3 Annealing Condition 1 </figcaption>
+</figure>
+<figure>
+    <img class="img-responsive" src="./img/material/Fig4.png">
+    <figcaption id="mono-line">Fig.4 Annealing Condition 2 </figcaption>
+    </figure>
+<figure>
+    <img class="img-responsive" src="./img/material/Fig3.png">
+    <figcaption id="mono-line">Fig.5 Annealing Condition 3 </figcaption>
+</figure>
+
+<h2>4. Electrophoresis</h2>
+<p>Gel electrophoresis was conducted by a standard procedure as follows.</p>
+<ol>
+	<li>Mix 1×TAE buffer 100mL and agarose gel powder (Takara Japan)0.80g.</li>
+	<li>Heat the mixture by microwave for about 30 seconds.</li>
+	<li>Pour the heated mixture into the plastic case and leave it for about 30 minutes.</li>
+	<li>Set the gel on electrophoresis chamber (Mupid-2plus, Mupid, JAPAN).</li>
+	<li>Mix 5μL of sample and 1μL of 6×Loding buffer.</li>
+	<li>Apply 6μL of each sample to wells.</li>
+	<li>Apply 50V for about 80 minutes.</li>
+	<li>Stain the gel by SYBR GOLD for about 20 minutes.</li>
+	<li>Observe fluorescence by gel imager (ChemiDoc MP : BIO-RAD USA).</li>
+</ol>
+
+<h2>5. AFM imaging</h2>
+<p>AFM imaging was conducted as follows.  We used an observation buffer in Table 6.
+<ol>
+	<li>Fix mica on a glass plate (Furuuchi Chemical Corporation JAPAN)</li>
+	<li>Put 2μL of sample solution on mica</li>
+	<li>Wait for over 10 minutes</li>
+	<li>Set up AFM (Nano Live Vision, RIBM, JAPAM)</li>
+	<li>Observe samples with tapping mode (Micro Cantilever, OLYMPUS, JAPAN)</li>
+</ol>
+<figure>
+  <figcaption id="mono-line">Table 6 observation buffer composition</figcaption>
+    <table id="EuropeanTable">
+    		<thead>
+      			<tr>
+        			<th></th>
+        			<th>Concentration[mM]</th>
+						</tr>
+    		</thead>
+    		<tbody>
+      			<tr>
+        			<td>Tris/Tris-HCl</td>
+        			<td>20</td>
+						</tr>
+						<tr>
+        			<td>Mg<sup>2+<sup></td>
+        			<td>12.5</td>
+						</tr>
+				</tbody>
+  	</table>
+</figure>
+
+<h2>7. Materials</h3>
+	<figure>
+	  <figcaption id="mono-line">Table 7 Materials</figcaption>
+		  <table id="EuropeanTable">
+	    		<thead>
+	      			<tr>
+	        			<th>Material</th>
+	        			<th>Company</th>
+							</tr>
+	    		</thead>
+	    		<tbody>
+	      			<tr>
+	        			<td>Agarose</td>
+	        			<td>TAKARA JAPAN</td>
+							</tr>
+							<tr>
+	        			<td>M13mp18</td>
+	        			<td>TAKARA JAPAN</td>
+							</tr>
+							<tr>
+	        			<td>SYBR gold</td>
+	        			<td>TAKARA JAPAN</td>
+							</tr>
+							<tr>
+	        			<td>50xTAE</td>
+	        			<td>Wako Pure Chemical Industries</td>
+							</tr>
+							<tr>
+	        			<td>6xloading buffer</td>
+	        			<td>TAKARA JAPAN</td>
+							</tr>
+							<tr>
+	        			<td>Staples</td>
+	        			<td>Eurofins Genomics JAPAN</td>
+							</tr>
+					</tbody>
+	  		</table>
+	</figure>
+
+<h2>8. Equipments</h3>
+	<figure>
+		<figcaption id="mono-line">Table 7 Materials</figcaption>
+		<table id="EuropeanTable">
+					<thead>
+							<tr>
+								<th>Equipment</th>
+								<th>Company</th>
+							</tr>
+					</thead>
+					<tbody>
+							<tr>
+								<td>Mupid-2plus(Electrophoresis chamber)</td>
+								<td>Mupid JAPAN</td>
+							</tr>
+							<tr>
+								<td>ChemiDoc MP (gel imager)</td>
+								<td>BIO-RAD USA</td>
+							</tr>
+							<tr>
+								<td>Mastercycler pernonal (thermal cycler)</td>
+								<td>Eppendorf USA</td>
+							</tr>
+							<tr>
+								<td>Nano Live Vision (AFM)</td>
+								<td>RIBM JAPAM</td>
+							</tr>
+							<tr>
+								<td>Mica</td>
+								<td>Furuuchi Chemical Corporation JAPAN</td>
+							</tr>
+							<tr>
+								<td>Micro Cantilever</td>
+								<td>OLYMPUS JAPAN</td>
+							</tr>
+					</tbody>
+				</table>
+			</figure>
+			</div>
+		</div>
+    </section>
+
+    <!-- フッター --------------------------------------------------------------------->
+    <footer class="footer" style="background-color:#222222;">
+  		<div class="container">
+  			<div class="row">
+        		<div class="col-xs-8 col-sm-8 col-md-8" >
+  					<a href="mailto:biomod2015@gmail.com" id="info_mail"><font color="#EEEEEE">
+            			<span class="glyphicon glyphicon-envelope"></span>TeamSenadi2015@gmail.com</font>
+            		</a>
+    				<p class="text-muted"><font color="#EEEEEE">Copyright &copy; 2015 Team Sendai All Rights Reserved.</font></p>
+    			</div>
+
+    			<div class="col-xs-4 col-sm-4 col-md-4" >
+  					<div id="footer-lab">
+            			<a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html" target=”_blank”>
+            			<img src="img/lab-logo1.png"height="60" >
+            			</a>
+            		</div>
+  				</div>
+  			</div>
+  		</div>
+	</footer>
+
+	<!-- サイドナビによる移動プログラム ------------------------------------------------>
+    <script>
+        $(function(){
+            // smooth-scroll
+            // http://kyasper.com/jquery-tips/
+            $('a[href^=#]').click(function(){
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html': href);
+                var position = target.offset().top - 70;
+                //header100px分offset
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+
+    <!--「ページトップへ戻る」プログラム------------------------------------------------>
+    <script>
+		$.goup({location: "right",locationOffset: 50,bottomOffset: 50,title:"up↑"});
+	</script>
+
+	<!--「ボタンをかっこよくする」プログラム------------------------------------------------>
+	<script >
+		$('.navigation a').animateToSelector({
+    	selectors: ['.navigation a:hover'],
+    	properties: [
+        	'background-color',
+        	'padding-left',
+        	'color'
+    	],
+    		events: ['mouseover', 'mouseout']
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+
+#gnav li a{
+    color: gray;
+    background: white;
+    border-top: inset 1px #CCCCCC;
+    border-bottom: inset 1px #CCCCCC;
+}
+   
+.navbar-defult .navigation a:hover {
+
+    background-color: #FFE4B5;
+    color: black;
+}
+
+
+#gnav li a.current{
+
+    border-top: inset 1px #FFCC66;
+    border-bottom: inset 1px #FFCC66;
+    color: black;
+}
+
+
+.navbar .navbar-collapse .navigation li a{
+    color: #EEEEEE;
+   
+}
+   
+.navbar .navbar-collapse .navigation a:hover {
+    padding-top:13px;
+    color: #FF773E;
+}
+
+.navbar-brand {
+  background: url("./img/HPlogo.png") no-repeat left center;
+  background-size: contain;
+  height: 50px;
+  width: 300px;
+}
+
+
+
+/*home*/
+#home{
+ 
+}
+.subtitle{
+    position: absolute;
+    color: #002e5c;
+    top: 250px;
+    left: 300px;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+     text-shadow: 2px 2px 1px #eee,
+    -2px 2px 1px #eee,
+    2px -2px 1px #eee,
+    -2px -2px 1px #eee;
+}
+
+#hero-content {
+	  margin: 0;
+	width:100%;
+	max-width: 1300px;
+    height: 460px;
+    background-color: #316679;
+    background-image: url("./img/home/top1.png");
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+@media (min-width: 998px) {
+body {
+    padding-top:120px;
+  }
+  .fixed-sidebar {
+   
+    width:20%;
+     max-width: 250px; 
+  }
+}
+
+
+ 
+@media(max-width: 997px) {
+  body {
+    padding-top: 200px;
+  }
+  .fixed-sidebar {
+    position:static; /* 固定化解除*/
+    width: auto;
+  }
+}

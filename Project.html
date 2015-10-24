@@ -1,0 +1,239 @@
+<!DOCCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+	<title>Project- TeamSendai2015</title>
+	<!--外部ファイル読み込み------------------------------------------------>	
+		<link rel="stylesheet" href="./normalize.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--自作------->
+		<link rel="stylesheet" href="./side-nav1.css">
+		<link rel="stylesheet" href="./text-line.css">
+		<link rel="stylesheet" href="./font.css">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script type="text/javascript" src="./lib/jquery-2.1.4.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script type="text/javascript" src="./scripts/nav-current.jquery.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="./scripts/insert-articles.js"></script>
+		<script type="text/javascript" src="./scripts/jquery.goup.js"></script>
+		<script type="text/javascript" src="./scripts/animatetoselector.jquery.js"></script>
+		<script type="text/javascript" src="./scripts/nav-current.jquery.js"></script>
+
+	<!--フォント--------------------------------------------------------------->	
+		<link href='https://fonts.googleapis.com/css?family=Roboto|Oswald:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,500,400,300,100' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora:700&subset=latin,greek' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- グローバルナビ ----------------------------------------------------->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<!-- ロゴ名の表示------------------------------------------->
+  		<div class="navbar-header">
+    		<a class="navbar-brand" href="./index.html"></a>
+    	<!--トグルボタンの設置-->
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-content">
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+    		</button>
+  		</div>
+	<!-- ナビのリンクリスト ------------------------------------------>
+		<div id="nav-content" class="collapse navbar-collapse ">
+    		<ul class="nav navbar-nav navigation">
+    			<li><a href="./index.html">Home</a></li>
+				<li><a href="./Project.html">Project</a></li>
+				<li><a href="./Design.html">Design</a></li>
+				<li><a href="./Simulation.html">Simulation</a></li>
+				<li><a href="./Experiment.html">Experiment</a></li>
+				<li><a href="./Future.html">Future</a></li>
+				<li><a href="./Material.html">Material & Method</a></li>
+				<li><a href="./Team.html">Team & Sponsors</a></li>
+     <!--ドロップダウン化するliタグ------------------------------------>
+      			<li class="dropdown">
+        			<ul class="dropdown-menu">
+        				<li><a href="./index.html">Home</a></li>
+						<li><a href="./Project.html">Project</a></li>
+						<li><a href="./Design.html">Design</a></li>
+						<li><a href="./Simulation.html">Simulation</a></li>
+						<li><a href="./Experiment.html">Experiment</a></li>
+						<li><a href="./Future.html">Future</a></li>
+						<li><a href="./Material.html">Material & Method</a></li>
+						<li><a href="./Team.html">Team & Sponsors</a></li>
+        			</ul>
+      			</li>
+    		</ul>
+    	</div>
+	</nav>
+
+<!-- コンテンツ ----------------------------------------------------------------------------------->
+	<section class="container" style="background-color:white;">
+	<!-- 全体の割り振りrowで開始 ------------------------------------->
+        
+        <!-- サイドナビ ---------------------------------------------->
+        
+        <nav class="navbar navbar-defult">
+            <ul id="gnav" class="nav nav-tabs   navigation">
+            	<li><a href="#content2-1" class="side-title"><b>Background & Motivation</b></a></li>
+				<li><a href="#content2-2" class="side-title"><b>Project Idea</b></a></li>
+				<li><a href="#content2-3" class="side-title"><b>Project Goal</b></a></li>
+			</ul>
+	 	</nav>
+
+	<!-- 文章コンテンツ ----------------------------------------------->	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
+				<h1>Project</h1>
+
+              	<div id="content2-1">
+              		<div class="subtitle-line">
+						<h2>Background & Motivation</h2>
+
+						<p>Many proteins are known to function in multimeric configuration. For instance, Trp RNA-Binding Attenuation Protein(TRAP) [1] and GTPase [2] assemble circular structures while Tetratricopeptite - repeat Protein (TRP) [3] assembles a linear structure.</p>
+        			
+        			 <div class="row">
+        			 	<figure>
+        					<div class="col-xs-4 col-sm-4 col-md-4" style="background-color:white;">
+        						<img class="img-responsive" src="./img/project/project1a.gif">
+        					</div>
+        					<div class="col-xs-4 col-sm-4 col-md-4" style="background-color:white;">
+        						<img class="img-responsive" src="./img/project/project1b.gif">
+        					</div>
+
+        					<div class="col-xs-4 col-sm-4 col-md-4" style="background-color:white;">
+        						<img class="img-responsive" src="./img/project/project1c.gif">
+        					</div>
+        				
+        					<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
+        						<figcaption>Fig.1 Self assembly of proteins</figcaption>
+        					</div>
+        				</figure>
+        			</div>
+
+						<p> In case of cicular configuration, proteins have intrinsic curvature and the number of monomers are determined by the angle of a monomer. However, most of linear assembly like the fiber or string of proteins grow unlimitedly. Controlling the number of linear assembly is difficult without additional capping mechanism [4-5]. Here, we focused on constructing size-controllable linear homomultimer by DNA origami. We proposed a novel mechanism to control the linear assembly. </p>
+        				<p>Conventionally, DNA nanostructure such as DNA tile utilizes the hybridization between complementary base sequences [6-7]. In contrast, we propose a method which directly utilizes shape-complementary DNA origami structures to construct various multimeric complexes [8].</p>
+				</div>
+
+				<div id="content2-2">	
+					<div class="subtitle-line">
+						<h2>Project Idea</h2>
+					</div>
+					
+					<p>In our project, we have designed a DNA origami monomer consisting of a cylinder and a twisted shaft, where the shaft can rotate inside the cylinder. The shaft works as a vernier to count the number of stacked monomer and grooves on the cylinder limits the movement of the shaft that determines the number of stacking. Furthermore, by adjusting the twist angle of the shaft and the groove width of the cylinder, we can change the number.</p>
+					
+					<figure>
+        				<img class="img-responsive" src="./img/project/project2.png" width="500">
+            				<figcaption>Fig. 2 The concept of our idea</figcaption>
+        			</figure>
+				</div>	
+
+				<div id="content2-3">
+					<div class="subtitle-line">	
+						<h2>Project Goal & Project Achievement</h2>
+					</div>
+					
+						<figure>
+        					<img class="img-responsive" src="./img/project/project3.png">
+            				<figcaption>Fig. 3 The goal and the achievement of our project</figcaption>
+        				</figure>
+					<p>Our goal is to realize the linear homomultimer which is able to control the number of stacking. We divide the goal into 5 sub-goals.</p>
+
+					<ol>
+						<li>To design the monomer with the vernier mechanism.</li>
+						<li>To simulate the stacking behavior using physical engine.</li>
+						<li>To confirm the shape of the DNA origami monomer by experiment.</li>
+						<li>To verify the stacking of monomers by experiment.</li>
+						<li>To evaluate the stacking control mechanism.</li>
+					</ol>
+					<p>Actually, we have achieved all sub-goals now. The designed DNA origami monomer is constructed correctly. The monomers stack to form multimer as we confirmed the functionality of proposed vernier mechanism.</p>
+					
+				</div>
+
+				</div>	
+				
+				<div id="content2-5">
+					<div class="subtitle-line">		
+						<h2>Reference</h2>
+					</div>
+					
+					<p>[1] Bayfield, O. W., Chen, C. S., Patterson, A. R., Luan, W., Smits, C., Gollnick, P., & Antson, A. A. (2012). Trp RNA-binding attenuation protein: modifying symmetry and stability of a circular oligomer. PloS one, 7(9), e44309.
+					</p><p>[2] Shin, D. H., Lou, Y., Jancarik, J., Yokota, H., Kim, R., & Kim, S. H. (2004). Crystal structure of YjeQ from Thermotoga maritima contains a circularly permuted GTPase domain. Proceedings of the National Academy of Sciences of the United States of America, 101(36), 13198-13203.
+					</p><p>[3] Kajander, T., Cortajarena, A. L., Mochrie, S., & Regan, L. (2007). Structure and stability of designed TPR protein superhelices: unusual crystal packing and implications for natural TPR proteins. Acta Crystallographica Section D: Biological Crystallography, 63(7), 800-811.
+					</p><p>[4] Sara H. Mej?as, et al. "Controlled nanometric fibers of self-assembled designed protein scaffolds." Nanoscale 6.19 (2014): 10982-10988
+					</p><p>[5] Matsunaga, R., Yanaka, S., Nagatoishi, S., and Tsumoto, K. "Hyperthin nanochains composed of self-polymerizing protein shackles." Nature communications 4 (2013).
+					</p><p>[6] Hamada, S., and Murata S. "Substrate‐Assisted Assembly of Interconnected Single‐Duplex DNA Nanostructures." Angewandte Chemie 121.37 (2009): 6952-6955.
+					</p><p>[7] Winfree, E., Liu, F., Wenzler, L. A., and Seeman, N. C. "Design and self-assembly of two-dimensional DNA crystals." Nature 394.6693 (1998): 539-544.
+					</p><p>[8] Gerling, T., Wagenbauer, K. F., Neuner, A. M., and Dietz, H. "Dynamic DNA devices and assemblies formed by shape-complementary, non-base pairing 3D components." Science 347.6229 (2015): 1446-1452.
+					
+					</p>
+				
+				</div>
+			</div>
+
+    </section>
+    <!-- フッター --------------------------------------------------------------------->
+    <footer class="footer" style="background-color:#222222;" width:"100">
+  		<div class="container">
+  			<div class="row">
+        		<div class="col-xs-8 col-sm-8 col-md-8" >
+  					<a href="mailto:biomod2015@gmail.com" id="info_mail"><font color="#EEEEEE">
+            			<span class="glyphicon glyphicon-envelope"></span>TeamSenadi2015@gmail.com</font>
+            		</a>
+    				<p class="text-muted"><font color="#EEEEEE">Copyright &copy; 2015 Team Sendai All Rights Reserved.</font></p>
+    			</div>
+    			
+    			<div class="col-xs-4 col-sm-4 col-md-4" >
+  					<div id="footer-lab">
+            			<a href="http://www.molbot.mech.tohoku.ac.jp/eng/index.html" target=”_blank”>
+            			<img src="img/lab-logo1.png"height="60" >
+            			</a>
+            		</div>
+  				</div>
+  			</div>
+  		</div>
+	</footer>
+	<!-- サイドナビによる移動プログラム ------------------------------------------------>
+    <script>
+        $(function(){
+            // smooth-scroll
+            // http://kyasper.com/jquery-tips/
+            $('a[href^=#]').click(function(){
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html': href);
+                var position = target.offset().top - 70;
+                //header100px分offset
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });    
+        });
+    </script>
+    
+    <!--「ページトップへ戻る」プログラム------------------------------------------------>
+    <script>
+		$.goup({location: "right",locationOffset: 50,bottomOffset: 50,title:"up↑"});
+	</script>
+	<!--「ボタンをかっこよくする」プログラム------------------------------------------------>
+	<script >
+		$('.navigation a').animateToSelector({
+    	selectors: ['.navigation a:hover'],
+    	properties: [
+        	'background-color',
+        	'padding-left',
+        	'color'
+    	],
+    		events: ['mouseover', 'mouseout']
+		});
+	</script>
+	</div>
+</body>
+</html>

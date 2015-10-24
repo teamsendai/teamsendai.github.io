@@ -1,0 +1,116 @@
+
+	html{
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ font-size: 2.0em;
+ font-weight: 100;
+ margin: 0 auto;
+ color: #555555;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.0em;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.0em;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #555555
+}
+
+figure{
+  line-height: 50px;
+  padding : 25px;
+}
+
+#mono-line {
+	font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 500;
+	line-height: 1.5em;
+	text-align: center;
+	line-height: 1.5em;
+  line-height: 20px;
+  padding : 10px;
+}
+
+#multi-line{
+	font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 300;
+	line-height: 1.5em;
+	text-align: justify;
+  text-justify: inter-ideograph;
+  -ms-text-justify: inter-ideograph;
+}
+
+#EuropeanTable
+{
+	font-family: 'Roboto', sans-serif;
+  font-size: 1.0em;
+  font-weight: 300;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	text-align: left;
+}
+#EuropeanTable th {
+	padding: 10px 8px;
+	font-size: 1.0em;
+	font-weight: 300;
+	color: #555555;
+	border-bottom: 2px solid #555555;
+	text-align: center;
+}
+
+#EuropeanTable th:first-child {
+	padding: 10px 25px;
+  text-align: right;
+	border-right:2px solid #555555;
+}
+
+#EuropeanTable td
+{
+	color: #555555;
+	padding: 9px 8px 0px 8px;
+	text-align: center;
+}
+
+#EuropeanTable td:first-child {
+	padding: 9px 25px 0px 8px;
+	text-align: right;
+	border-right:2px solid #555555;
+}
+
+#EuropeanTable tbody tr:hover td
+{
+	color: #555555;
+}
