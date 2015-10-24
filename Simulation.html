@@ -95,7 +95,8 @@
 
 				<figure>
 					<video id="design1" src="img/simulation/simulation_20s.mp4" autoplay loop width="700"></video>
-					<figcaption>Movie 1 A scene from simulation</figcaption>
+				
+						<figcaption id="mono-line">Movie 1 A scene from simulation</figcaption>
 				</figure>
 
 
@@ -108,8 +109,7 @@
 							<li>Simulation space is set as a cube with periodic boundaries to reduce the computing time. Hundreds of monomers placed randomly in a space with determined concentration</li>
 							<figure>
 								<img class="img-responsive" src="./img/simulation/simulation1.png" width = "350">
-							<figcaption id="mono-line">Fig. 2 The simulation space
- </figcaption>
+							<figcaption id="mono-line">Fig. 2 The simulation space</figcaption>
 							
 							</figure>
 							
@@ -136,12 +136,15 @@
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation2.png">
-							<figcaption>Fig.2 The monomer repartition</figcaption>
+								<figcaption id="mono-line">Fig. 2 The monomer repartition</figcaption>
+							
 						</figure>
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation3.png">
-							<figcaption>Fig. 3 Histogram of the number of monomer</figcaption>
+								<figcaption id="mono-line">Fig. 3 Histogram of the number of monome</figcaption>
+							
+						
 						</figure>
 
 						<p>There are still some unrealistic motions due to the limitation of the Unity engine, since this engine is not made to work on the molecular scale, it cannot handle colliding objects at high speed. We plan to improve the simulation in the following ways: (1) Introducing CUDA to reduce the computational time. (2) Employing parallel processing to compute the time development in parallel to obtain average data.</p>
