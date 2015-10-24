@@ -8,9 +8,8 @@
 
 #gnav li a:hover{
     color: gray;
-    background: white;
-    border-top: inset 2px #6699FF;
-    border-bottom: inset 2px #6699FF;
+    background-color: #99CCCC;
+
 }
 
    

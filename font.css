@@ -75,6 +75,19 @@ ol {
   line-height: 1.5em;
   margin-bottom: 0.5em;
   color: #2a2a2a;
+  
+  
+   font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+
+  
+  
+  
+  
 }
 ul {
  font-family: 'Roboto', sans-serif;
@@ -86,6 +99,14 @@ ul {
   line-height: 1.5em;
   margin-bottom: 0.5em;
   color: #2a2a2a;
+  
+  
+  
+
+  
+  
+  
+  
 }
 
 figure{
@@ -103,6 +124,17 @@ figure{
   line-height: 20px;
   padding : 10px;
   color: #56599f;
+  
+  
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+  
+  
+  
 }
 
 #multi-line{
@@ -114,6 +146,17 @@ figure{
   text-justify: inter-ideograph;
   -ms-text-justify: inter-ideograph;
   color: #56599f;
+  
+  
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+  
+  
+  
 }
 
 #EuropeanTable
