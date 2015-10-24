@@ -91,7 +91,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12" style="background-color:white;">
 				<h1>Simulation</h1>
 
-				<p>To confirm our design concept, we developed a simulation software using the physical engine Unity[1], which allows us to explore the space of design parameters and predict the behavior of real nano objects.</p>
+				<p>To confirm our design concept, we developed a simulation software using the physical engine Unity [1], which allows us to explore the space of design parameters and predict the behavior of behavior of molecules in nano-scale.</p>
 
 				<figure>
 					<video id="design1" src="img/simulation/simulation_20s.mp4" autoplay loop width="700"></video>
@@ -111,15 +111,7 @@
 								<figcaption>Fig 1. The simulation space</figcaption>
 							</figure>
 							
-								<li>To simulate the collision efficiently, we modify the position of monomer, which
-
-goes out of the boundaries to satisfy the periodical boundary. Instead of 
-
-combining two objects, we erased one of the object and generate a new object 
-
-that matches the length with the addition monomer. It is possible to separate 
-
-the object into two pieces.</li>
+								<li>To simulate the collision efficiently, we modify the position of monomer, which goes out of the boundaries to satisfy the periodical boundary. When two monomers collide, we erased one of the object and generate a new object with correct length instead of combining two objects. It is possible to separate the object into two pieces.</li>
 								<li>The monomers are simplified as cylinders, which is cost-efficient for the physical engine.</li>
 								<li>The stacking of the monomers takes place as the collisions among the cylinders.</li>
 						</ul>
@@ -138,7 +130,7 @@ the object into two pieces.</li>
 
 				<div id="content2-3">
 					<h2>Results</h2>
-					<p>In our simulation, the Brownian motion of each monomer and the stacking behavior among them is reproduced. The results correspond to the temperature at 8 °C and 250 nM concentration of DNA origami in a span of 8 seconds. The graph (Fig. 2) and the histogram (Fig. 3) show that monomer concentration decreases while the multimers such as dimers and trimers increase overtime.</p>
+					<p>In our simulation, the Brownian motion of each monomer and the stacking behavior among them were reproduced. The results correspond to the temperature at 8 °C and 250 nM concentration of DNA origami in a span of 8 seconds. The graph (Fig. 2) and the histogram (Fig. 3) show that monomer concentration decreased while the multimers such as dimers and trimers increased overtime.</p>
 
 						<figure>
 							<img class="img-responsive" src="./img/simulation/simulation2.png">
