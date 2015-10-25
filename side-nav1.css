@@ -1,4 +1,8 @@
-
+.appIconBig{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
 
 #gnav li a{
     color: gray;
@@ -62,7 +66,7 @@
 	  margin: 0;
 	width:100%;
 	max-width: 1300px;
-    height: 460px;
+    height: auto;
     background-color: #316679;
     background-image: url("./img/home/top1.jpg");
     background-size: cover;
