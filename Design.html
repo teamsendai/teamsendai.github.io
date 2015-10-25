@@ -103,7 +103,7 @@
 					
 					<p>Circular assembly is to construct size-determined homomultimer. The dihedral angle
 
-between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p> 
+between stacking surfaces determines the number of stacking (Fig. 1). Concretely speaking, the number of stacking is given by</p> 
 
     				<span class="math">
            				\[{N_c}=(\frac{360°}{α})
@@ -177,7 +177,7 @@ between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p
 						<h2>Implementation</h2>
 					</div>
 					<p></p>
-					<p>In order to realize the concept, we designed the monomer by DNA origami (Fig. 4). The shaft consists of a rod and two heads on its both ends. The rod is made of 6 double helices (6 helix bundle, 6HB) while the heads are made of 4 helices. The shaft is twisted by adjusting the interval distance among the crossovers in the 6HB. The cylinder is made of 30 double helices. 12 of them are shorter than others so as to make rotating space (groove) for the head. This special shape can determine the movable range of the shaft. We set the twist angle θ to be 10°[1] and the movable range φ to be 120°. According to Equation (3), the maximum stacking number should be 11.</p>
+					<p>In order to realize the concept, we designed the monomer by DNA origami (Fig. 4) inspired by previous structure [1]. The shaft consists of a rod and two heads on its both ends. The rod is made of 6 double helices (6 helix bundle, 6HB) while the heads are made of 4 helices. The shaft is twisted by adjusting the interval distance among the crossovers in the 6HB. The cylinder is made of 30 double helices. 12 of them are shorter than others so as to make rotating space (groove) for the head. This special shape can determine the movable range of the shaft. We set the twist angle θ to be 10°[2] and the movable range φ to be 120°. According to Equation (3), the maximum stacking number should be 11.</p>
 					
 					<figure>
 						<img src="./img/design/design4.png" width="100%"height="40%">
@@ -185,7 +185,7 @@ between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p
 					
 					</figure>
 					<p></p>
-					<p>Instead of sticky end hybridization, we use shape-complementary blunt ends [2]. The monomer can stack each other only when the shape-complementary surfaces on both the cylinder and the shaft matches in the pre-determined way (Fig. 5).</p>
+					<p>Instead of sticky end hybridization, we use shape-complementary blunt ends [3]. The. The monomer can stack each other only when the shape-complementary surfaces on both the cylinder and the shaft matches in the pre-determined way (Fig. 5).</p>
 					
 					<figure>
 						<video id="design1" src="img/design/design5.mp4" autoplay loop width="300"></video>
@@ -193,7 +193,7 @@ between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p
 							<figcaption id="mono-line">Fig. 5 Shape-complementary surfaces</figcaption>
 					</figure>
 					
-					<p>The DNA origami is designed by caDNAno2 [3] (Fig. 6). M13mp18 is used as the scaffold. The staples of the shaft are shorter than those of the cylinder to set the melting temperature of the shaft higher than that of the cylinder. During annealing, the shaft forms first, then the cylinder surrounds the shaft.</p>
+					<p>The DNA origami is designed by caDNAno2 [4] (Fig. 6). M13mp18 is used as the scaffold. The staples of the shaft are shorter than those of the cylinder to set the melting temperature of the shaft higher than that of the cylinder. During annealing, the shaft forms first, then the cylinder surrounds the shaft.</p>
 					<p>These shaft and cylinder are made from one scaffold. To avoid undesired entanglements, the shaft is tethered to the cylinder at two points, one is close to the top and the other is close to the bottom.</p>
 					
 					<figure>
@@ -202,7 +202,7 @@ between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p
 					
 					</figure>
 
-					<p>According to Equation (3), the number of stacking is determined by the twist angle θ and the movable range φ. In 3D DNA origami, twisting of the structure can be induced by skipping or inserting base pairs between crossovers [1].</p>
+					<p>According to Equation (3), the number of stacking is determined by the twist angle θ and the movable range φ. In 3D DNA origami, twisting of the structure can be induced by skipping or inserting base pairs between crossovers [2].</p>
 					<p>In our design, by skipping 1 base, the shaft twists clockwise in 5°, while it twists counter clockwise in the same angle by inserting 1 base (Fig. 7). To adjust the twist angle θ, a certain number of bases are skipped or inserted properly. In the following experiment, we use the shaft with 10° twist by skipping 2 bases.</p>
 
 					<figure>
@@ -226,19 +226,17 @@ between stacking surfaces determines the number of stacking (Fig. 1). Namely,</p
 						<h2>Reference</h2>
 					</div>
 				<div class="refference">
-				
-					<p class="refference">[1] Dietz, H., Douglas, S. M., & Shih, W. M. (2009). Folding DNA into twisted and curved nanoscale shapes. Science, 325(5941), 725-730.</p>
-				
-					<p class="refference">[2] Gerling, T., Wagenbauer, K. F., Neuner, A. M., and Dietz, H. "Dynamic DNA devices and 
+					<p class="refference">[1] Alexander E. Marras, Lifeng Zhou, Hai-Jun Su, Carlos E. Castro. Programmable motion of DNA origami mechanisms. Proceedings of the National Academy of Sciences, 112, 713-718 , 2015</p>
+
+
+
+					<p class="refference">[2] Dietz, H., Douglas, S. M., & Shih, W. M. (2009). Folding DNA into twisted and curved nanoscale shapes. Science, 325(5941), 725-730.</p>
+					<p class="refference">[3] Gerling, T., Wagenbauer, K. F., Neuner, A. M., and Dietz, H. "Dynamic DNA devices and 
 
 assemblies formed by shape-complementary, non?base pairing 3D components." Science 
 
 347.6229 (2015): 1446-1452.</p>
-
-
-
-					
-					<p class="refference">[3] caDNAno2: http://cadnano.org/.Shawn M. Douglas, Adam H. Marblestone, Surat Teerapittayanon, Alejandro Vazquez, George M. Church, William M. Shih. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research, 37, 5001-5006 , 2009</p>
+					<p class="refference">[4] caDNAno2: <a href="http://cadnano.org/.Shawn">http://cadnano.org/.Shawn</a> M. Douglas, Adam H. Marblestone, Surat Teerapittayanon, Alejandro Vazquez, George M. Church, William M. Shih. Rapid prototyping of 3D DNA-origami shapes with caDNAno. Nucleic Acids Research, 37, 5001-5006 , 2009</p>
 					
 				</div>
 				</div>
@@ -252,7 +250,7 @@ assemblies formed by shape-complementary, non?base pairing 3D components." Scien
   			<div class="row">
         		<div class="col-xs-8 col-sm-8 col-md-8" >
   					<a href="mailto:biomod2015@gmail.com" id="info_mail"><font color="#EEEEEE">
-            			<span class="glyphicon glyphicon-envelope"></span>Teamsenadi2015@gmail.com</font>
+            			<span class="glyphicon glyphicon-envelope"></span>Teamsendai2015@gmail.com</font>
             		</a>
     				<p class="text-muted"><font color="#EEEEEE">Copyright &copy; 2015 Team Sendai All Rights Reserved.</font></p>
     			</div>
