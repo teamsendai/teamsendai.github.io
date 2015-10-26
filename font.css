@@ -19,11 +19,6 @@ h1 {
   font-weight: 500;
   text-align: center;
   
-  
- 
-  
-  
-  
 }
 
 h2 {
@@ -53,9 +48,7 @@ p {
    text-indent: 1em; 
 
 }
- .refference
- {
-font-size: 0.9em;}
+ 
 
 
 ol {
@@ -69,13 +62,12 @@ ol {
   margin-bottom: 0.5em;
   color: #2a2a2a;
   
-  
- 
-  
-  
-  
-  
 }
+.refference
+ {
+font-size: 0.9em;
+}
+
 ul {
  font-family: 'Roboto', sans-serif;
   font-size: 1.0em;
@@ -87,14 +79,8 @@ ul {
   margin-bottom: 0.5em;
   color: #2a2a2a;
   
-  
-  
-
-  
-  
-  
-  
 }
+
 
 figure{
   line-height: 50px;
@@ -187,3 +173,16 @@ footer{
 background-color:#FFDBC9;
 margin: 30px 0px 0 0;
 }
+
+
+ ol.refference li{
+      list-style-type:none;
+      list-style-position:inside;
+      counter-increment: cnt;
+       padding-left: 1em;
+ text-indent: -1.5em;
+    }
+    ol.refference li:before{
+      display: marker;
+      content: "[" counter(cnt) "]";
+    }
