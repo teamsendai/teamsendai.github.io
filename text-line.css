@@ -23,4 +23,6 @@ figure video{
 }
 
 .container
-{width:70%;}
+{width:70%;
+min-width: 400px;
+}
