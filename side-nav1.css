@@ -36,10 +36,12 @@
 }
 
 .navbar-brand {
+
+  margin: 5px 14px ;
   background: url("./img/HPlogo.png") no-repeat left center;
   background-size: contain;
-  height: 50px;
-  width: 300px;
+  height: 40px;
+  width: 200px;
 }
 
 
